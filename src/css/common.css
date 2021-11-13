@@ -10,6 +10,10 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 img {
@@ -18,15 +22,12 @@ img {
 }
 
 button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  font: inherit;
   text-align: center;
-  letter-spacing: 0.03em;
-  background-color: #f5f4fa;
+  background-color: #e2def7;
   border-radius: 4px;
   cursor: pointer;
-  border: none;
+  border-color: aqua;
   padding: 8px 24px;
 }
 
@@ -36,10 +37,52 @@ button:focus {
   background-color: #e9e7f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: rgb(53, 167, 167);
 }
 
 button:disabled {
   background-color: #f5f4fa;
   box-shadow: none;
   cursor: none;
+  border: none;
+}
+
+span {
+  display: block;
+}
+
+input[type='number'] {
+  display: block;
+  margin-bottom: 10pt;
+}
+
+.timer {
+  display: flex;
+  font-size: large;
+}
+
+.field {
+  text-align: center;
+  padding: 10px 20px;
+  color: rgb(53, 167, 167);
+}
+
+.value {
+  font-size: 3em;
+}
+
+#datetime-picker {
+  border-color: aqua;
+  border-radius: 4px;
+  padding: 12px 24px;
+  margin-left: 20px;
+}
+
+#datetime-picker::placeholder {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#datetime-picker:hover {
+  border-color: rgb(53, 167, 167);
 }
